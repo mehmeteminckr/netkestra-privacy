@@ -1,1 +1,1100 @@
 
+{
+  "comment": "Products the daily build collects issues for. 'builtin': true products ship with the app (their issues are added to its list); others are added to the app's products by the downloaded list. To add a product, add an entry with its NVD vendor:product name (check it at https://nvd.nist.gov/products/cpe/search) and commit.",
+  "products": [
+    {
+      "key": "openssh",
+      "name": "OpenSSH",
+      "synonyms": [
+        "openssh",
+        "open ssh",
+        "openssh server",
+        "sshd"
+      ],
+      "banner": "openssh",
+      "aliases": [],
+      "cpe": [
+        "openbsd:openssh"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "dropbear",
+      "name": "Dropbear",
+      "synonyms": [
+        "dropbear",
+        "dropbear ssh",
+        "dropbear sshd"
+      ],
+      "banner": "dropbear",
+      "aliases": [],
+      "cpe": [
+        "matt_johnston:dropbear_ssh_server"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "apache",
+      "name": "Apache HTTP Server",
+      "synonyms": [
+        "apache",
+        "apache http server",
+        "apache httpd",
+        "apache2",
+        "httpd"
+      ],
+      "banner": "apache",
+      "aliases": [],
+      "cpe": [
+        "apache:http_server"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "nginx",
+      "name": "nginx",
+      "synonyms": [
+        "nginx",
+        "engine x",
+        "enginex"
+      ],
+      "banner": "nginx",
+      "aliases": [],
+      "cpe": [
+        "f5:nginx"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "lighttpd",
+      "name": "lighttpd",
+      "synonyms": [
+        "lighttpd",
+        "lighty"
+      ],
+      "banner": "lighttpd",
+      "aliases": [],
+      "cpe": [
+        "lighttpd:lighttpd"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "boa",
+      "name": "Boa",
+      "synonyms": [
+        "boa",
+        "boa webserver"
+      ],
+      "banner": "boa",
+      "aliases": [],
+      "cpe": [],
+      "builtin": true
+    },
+    {
+      "key": "goahead",
+      "name": "GoAhead",
+      "synonyms": [
+        "goahead",
+        "go ahead",
+        "goahead webs"
+      ],
+      "banner": "goahead",
+      "aliases": [
+        "goahead-webs"
+      ],
+      "cpe": [
+        "embedthis:goahead",
+        "goahead:goahead_webserver"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "iis",
+      "name": "Microsoft IIS",
+      "synonyms": [
+        "iis",
+        "microsoft iis",
+        "internet information services",
+        "internet information server"
+      ],
+      "banner": "microsoft-iis",
+      "aliases": [],
+      "cpe": [
+        "microsoft:internet_information_services"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "vsftpd",
+      "name": "vsFTPd",
+      "synonyms": [
+        "vsftpd",
+        "vsftp",
+        "very secure ftp"
+      ],
+      "banner": "vsftpd",
+      "aliases": [],
+      "cpe": [
+        "vsftpd_project:vsftpd"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "proftpd",
+      "name": "ProFTPD",
+      "synonyms": [
+        "proftpd",
+        "pro ftpd",
+        "pro ftp"
+      ],
+      "banner": "proftpd",
+      "aliases": [],
+      "cpe": [
+        "proftpd:proftpd"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "exim",
+      "name": "Exim",
+      "synonyms": [
+        "exim",
+        "exim4"
+      ],
+      "banner": "exim",
+      "aliases": [],
+      "cpe": [
+        "exim:exim"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "openssl",
+      "name": "OpenSSL",
+      "synonyms": [
+        "openssl",
+        "open ssl"
+      ],
+      "banner": "openssl",
+      "aliases": [],
+      "cpe": [
+        "openssl:openssl"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "php",
+      "name": "PHP",
+      "synonyms": [
+        "php"
+      ],
+      "banner": "php",
+      "aliases": [],
+      "cpe": [
+        "php:php"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "tomcat",
+      "name": "Apache Tomcat",
+      "synonyms": [
+        "tomcat",
+        "apache tomcat"
+      ],
+      "banner": "tomcat",
+      "aliases": [],
+      "cpe": [
+        "apache:tomcat"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "mysql",
+      "name": "MySQL",
+      "synonyms": [
+        "mysql",
+        "mysql server"
+      ],
+      "banner": "mysql",
+      "aliases": [],
+      "cpe": [
+        "oracle:mysql"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "mariadb",
+      "name": "MariaDB",
+      "synonyms": [
+        "mariadb",
+        "maria db"
+      ],
+      "banner": "mariadb",
+      "aliases": [],
+      "cpe": [
+        "mariadb:mariadb"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "postgresql",
+      "name": "PostgreSQL",
+      "synonyms": [
+        "postgresql",
+        "postgres",
+        "pgsql"
+      ],
+      "banner": "postgresql",
+      "aliases": [],
+      "cpe": [
+        "postgresql:postgresql"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "mongodb",
+      "name": "MongoDB",
+      "synonyms": [
+        "mongodb",
+        "mongo db"
+      ],
+      "banner": "mongodb",
+      "aliases": [],
+      "cpe": [
+        "mongodb:mongodb"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "redis",
+      "name": "Redis",
+      "synonyms": [
+        "redis"
+      ],
+      "banner": "redis",
+      "aliases": [],
+      "cpe": [
+        "redis:redis"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "memcached",
+      "name": "Memcached",
+      "synonyms": [
+        "memcached",
+        "memcache"
+      ],
+      "banner": "memcached",
+      "aliases": [],
+      "cpe": [
+        "memcached:memcached"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "elasticsearch",
+      "name": "Elasticsearch",
+      "synonyms": [
+        "elasticsearch",
+        "elastic search"
+      ],
+      "banner": "elasticsearch",
+      "aliases": [],
+      "cpe": [
+        "elastic:elasticsearch"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "samba",
+      "name": "Samba",
+      "synonyms": [
+        "samba",
+        "smbd"
+      ],
+      "banner": "samba",
+      "aliases": [],
+      "cpe": [
+        "samba:samba"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "bind",
+      "name": "BIND",
+      "synonyms": [
+        "bind",
+        "bind9",
+        "isc bind"
+      ],
+      "banner": "bind",
+      "aliases": [],
+      "cpe": [
+        "isc:bind"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "dnsmasq",
+      "name": "dnsmasq",
+      "synonyms": [
+        "dnsmasq"
+      ],
+      "banner": "dnsmasq",
+      "aliases": [],
+      "cpe": [
+        "thekelleys:dnsmasq"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "openvpn",
+      "name": "OpenVPN",
+      "synonyms": [
+        "openvpn",
+        "open vpn"
+      ],
+      "banner": "openvpn",
+      "aliases": [],
+      "cpe": [
+        "openvpn:openvpn"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "squid",
+      "name": "Squid",
+      "synonyms": [
+        "squid",
+        "squid proxy"
+      ],
+      "banner": "squid",
+      "aliases": [],
+      "cpe": [
+        "squid-cache:squid"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "haproxy",
+      "name": "HAProxy",
+      "synonyms": [
+        "haproxy",
+        "ha proxy"
+      ],
+      "banner": "haproxy",
+      "aliases": [],
+      "cpe": [
+        "haproxy:haproxy"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "postfix",
+      "name": "Postfix",
+      "synonyms": [
+        "postfix"
+      ],
+      "banner": "postfix",
+      "aliases": [],
+      "cpe": [
+        "postfix:postfix"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "dovecot",
+      "name": "Dovecot",
+      "synonyms": [
+        "dovecot"
+      ],
+      "banner": "dovecot",
+      "aliases": [],
+      "cpe": [
+        "dovecot:dovecot"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "sendmail",
+      "name": "Sendmail",
+      "synonyms": [
+        "sendmail"
+      ],
+      "banner": "sendmail",
+      "aliases": [],
+      "cpe": [
+        "sendmail:sendmail"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "openldap",
+      "name": "OpenLDAP",
+      "synonyms": [
+        "openldap",
+        "open ldap",
+        "slapd"
+      ],
+      "banner": "openldap",
+      "aliases": [],
+      "cpe": [
+        "openldap:openldap"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "pureftpd",
+      "name": "Pure-FTPd",
+      "synonyms": [
+        "pure ftpd",
+        "pureftpd",
+        "pure ftp"
+      ],
+      "banner": "pure-ftpd",
+      "aliases": [],
+      "cpe": [
+        "pureftpd:pure-ftpd"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "curl",
+      "name": "curl",
+      "synonyms": [
+        "curl",
+        "libcurl"
+      ],
+      "banner": "curl",
+      "aliases": [],
+      "cpe": [
+        "haxx:curl"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "sudo",
+      "name": "sudo",
+      "synonyms": [
+        "sudo"
+      ],
+      "banner": "sudo",
+      "aliases": [],
+      "cpe": [
+        "sudo_project:sudo"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "busybox",
+      "name": "BusyBox",
+      "synonyms": [
+        "busybox",
+        "busy box"
+      ],
+      "banner": "busybox",
+      "aliases": [],
+      "cpe": [
+        "busybox:busybox"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "cups",
+      "name": "CUPS",
+      "synonyms": [
+        "cups"
+      ],
+      "banner": "cups",
+      "aliases": [],
+      "cpe": [
+        "apple:cups"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "nodejs",
+      "name": "Node.js",
+      "synonyms": [
+        "node.js",
+        "nodejs",
+        "node js"
+      ],
+      "banner": "node.js",
+      "aliases": [],
+      "cpe": [
+        "nodejs:node.js"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "wordpress",
+      "name": "WordPress",
+      "synonyms": [
+        "wordpress",
+        "word press"
+      ],
+      "banner": "wordpress",
+      "aliases": [],
+      "cpe": [
+        "wordpress:wordpress"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "jenkins",
+      "name": "Jenkins",
+      "synonyms": [
+        "jenkins"
+      ],
+      "banner": "jenkins",
+      "aliases": [],
+      "cpe": [
+        "jenkins:jenkins"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "grafana",
+      "name": "Grafana",
+      "synonyms": [
+        "grafana"
+      ],
+      "banner": "grafana",
+      "aliases": [],
+      "cpe": [
+        "grafana:grafana"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "zabbix",
+      "name": "Zabbix",
+      "synonyms": [
+        "zabbix"
+      ],
+      "banner": "zabbix",
+      "aliases": [],
+      "cpe": [
+        "zabbix:zabbix"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "openwrt",
+      "name": "OpenWrt",
+      "synonyms": [
+        "openwrt",
+        "open wrt"
+      ],
+      "banner": "openwrt",
+      "aliases": [],
+      "cpe": [
+        "openwrt:openwrt"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "wpa_supplicant",
+      "name": "wpa_supplicant",
+      "synonyms": [
+        "wpa supplicant",
+        "wpasupplicant"
+      ],
+      "banner": "wpa_supplicant",
+      "aliases": [],
+      "cpe": [
+        "w1.fi:wpa_supplicant"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "hostapd",
+      "name": "hostapd",
+      "synonyms": [
+        "hostapd"
+      ],
+      "banner": "hostapd",
+      "aliases": [],
+      "cpe": [
+        "w1.fi:hostapd"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "miniupnpd",
+      "name": "MiniUPnP",
+      "synonyms": [
+        "miniupnpd",
+        "miniupnp",
+        "mini upnp"
+      ],
+      "banner": "miniupnpd",
+      "aliases": [],
+      "cpe": [
+        "miniupnp_project:miniupnpd"
+      ],
+      "builtin": true
+    },
+    {
+      "key": "nextcloud",
+      "name": "Nextcloud",
+      "synonyms": [
+        "nextcloud"
+      ],
+      "banner": "nextcloud",
+      "aliases": [],
+      "cpe": [
+        "nextcloud:nextcloud_server"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "gitlab",
+      "name": "GitLab",
+      "synonyms": [
+        "gitlab",
+        "git lab"
+      ],
+      "banner": "gitlab",
+      "aliases": [],
+      "cpe": [
+        "gitlab:gitlab"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "struts",
+      "name": "Apache Struts",
+      "synonyms": [
+        "struts",
+        "apache struts"
+      ],
+      "banner": "struts",
+      "aliases": [],
+      "cpe": [
+        "apache:struts"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "log4j",
+      "name": "Apache Log4j",
+      "synonyms": [
+        "log4j",
+        "apache log4j"
+      ],
+      "banner": "log4j",
+      "aliases": [],
+      "cpe": [
+        "apache:log4j"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "activemq",
+      "name": "Apache ActiveMQ",
+      "synonyms": [
+        "activemq",
+        "active mq",
+        "apache activemq"
+      ],
+      "banner": "activemq",
+      "aliases": [],
+      "cpe": [
+        "apache:activemq"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "solr",
+      "name": "Apache Solr",
+      "synonyms": [
+        "solr",
+        "apache solr"
+      ],
+      "banner": "solr",
+      "aliases": [],
+      "cpe": [
+        "apache:solr"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "couchdb",
+      "name": "Apache CouchDB",
+      "synonyms": [
+        "couchdb",
+        "couch db"
+      ],
+      "banner": "couchdb",
+      "aliases": [],
+      "cpe": [
+        "apache:couchdb"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "drupal",
+      "name": "Drupal",
+      "synonyms": [
+        "drupal"
+      ],
+      "banner": "drupal",
+      "aliases": [],
+      "cpe": [
+        "drupal:drupal"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "phpmyadmin",
+      "name": "phpMyAdmin",
+      "synonyms": [
+        "phpmyadmin",
+        "php my admin"
+      ],
+      "banner": "phpmyadmin",
+      "aliases": [],
+      "cpe": [
+        "phpmyadmin:phpmyadmin"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "roundcube",
+      "name": "Roundcube Webmail",
+      "synonyms": [
+        "roundcube",
+        "roundcube webmail"
+      ],
+      "banner": "roundcube",
+      "aliases": [],
+      "cpe": [
+        "roundcube:webmail"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "webmin",
+      "name": "Webmin",
+      "synonyms": [
+        "webmin"
+      ],
+      "banner": "webmin",
+      "aliases": [],
+      "cpe": [
+        "webmin:webmin"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "cacti",
+      "name": "Cacti",
+      "synonyms": [
+        "cacti"
+      ],
+      "banner": "cacti",
+      "aliases": [],
+      "cpe": [
+        "cacti:cacti"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "ntp",
+      "name": "NTP",
+      "synonyms": [
+        "ntpd",
+        "ntp",
+        "ntp server"
+      ],
+      "banner": "ntpd",
+      "aliases": [],
+      "cpe": [
+        "ntp:ntp"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "unbound",
+      "name": "Unbound",
+      "synonyms": [
+        "unbound"
+      ],
+      "banner": "unbound",
+      "aliases": [],
+      "cpe": [
+        "nlnetlabs:unbound"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "powerdns",
+      "name": "PowerDNS",
+      "synonyms": [
+        "powerdns",
+        "power dns",
+        "pdns"
+      ],
+      "banner": "powerdns",
+      "aliases": [],
+      "cpe": [
+        "powerdns:authoritative"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "mosquitto",
+      "name": "Mosquitto",
+      "synonyms": [
+        "mosquitto",
+        "mosquitto mqtt"
+      ],
+      "banner": "mosquitto",
+      "aliases": [],
+      "cpe": [
+        "eclipse:mosquitto"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "transmission",
+      "name": "Transmission",
+      "synonyms": [
+        "transmission"
+      ],
+      "banner": "transmission",
+      "aliases": [],
+      "cpe": [
+        "transmissionbt:transmission"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "netsnmp",
+      "name": "Net-SNMP",
+      "synonyms": [
+        "net snmp",
+        "netsnmp",
+        "snmpd"
+      ],
+      "banner": "net-snmp",
+      "aliases": [],
+      "cpe": [
+        "net-snmp:net-snmp"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "libssh",
+      "name": "libssh",
+      "synonyms": [
+        "libssh"
+      ],
+      "banner": "libssh",
+      "aliases": [],
+      "cpe": [
+        "libssh:libssh"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "rsync",
+      "name": "rsync",
+      "synonyms": [
+        "rsync",
+        "rsyncd"
+      ],
+      "banner": "rsync",
+      "aliases": [],
+      "cpe": [
+        "samba:rsync"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "git",
+      "name": "Git",
+      "synonyms": [
+        "git"
+      ],
+      "banner": "git",
+      "aliases": [],
+      "cpe": [
+        "git-scm:git"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "kubernetes",
+      "name": "Kubernetes",
+      "synonyms": [
+        "kubernetes",
+        "k8s"
+      ],
+      "banner": "kubernetes",
+      "aliases": [],
+      "cpe": [
+        "kubernetes:kubernetes"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "etcd",
+      "name": "etcd",
+      "synonyms": [
+        "etcd"
+      ],
+      "banner": "etcd",
+      "aliases": [],
+      "cpe": [
+        "etcd:etcd"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "consul",
+      "name": "Consul",
+      "synonyms": [
+        "consul",
+        "hashicorp consul"
+      ],
+      "banner": "consul",
+      "aliases": [],
+      "cpe": [
+        "hashicorp:consul"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "vault",
+      "name": "Vault",
+      "synonyms": [
+        "vault",
+        "hashicorp vault"
+      ],
+      "banner": "vault",
+      "aliases": [],
+      "cpe": [
+        "hashicorp:vault"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "gitea",
+      "name": "Gitea",
+      "synonyms": [
+        "gitea"
+      ],
+      "banner": "gitea",
+      "aliases": [],
+      "cpe": [
+        "gitea:gitea"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "rabbitmq",
+      "name": "RabbitMQ",
+      "synonyms": [
+        "rabbitmq",
+        "rabbit mq"
+      ],
+      "banner": "rabbitmq",
+      "aliases": [],
+      "cpe": [
+        "vmware:rabbitmq"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "isc_dhcp",
+      "name": "ISC DHCP",
+      "synonyms": [
+        "isc dhcp",
+        "dhcpd",
+        "isc dhcpd"
+      ],
+      "banner": "dhcpd",
+      "aliases": [],
+      "cpe": [
+        "isc:dhcp"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "strongswan",
+      "name": "strongSwan",
+      "synonyms": [
+        "strongswan",
+        "strong swan"
+      ],
+      "banner": "strongswan",
+      "aliases": [],
+      "cpe": [
+        "strongswan:strongswan"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "bash",
+      "name": "GNU Bash",
+      "synonyms": [
+        "bash",
+        "gnu bash"
+      ],
+      "banner": "bash",
+      "aliases": [],
+      "cpe": [
+        "gnu:bash"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "sqlite",
+      "name": "SQLite",
+      "synonyms": [
+        "sqlite",
+        "sqlite3"
+      ],
+      "banner": "sqlite",
+      "aliases": [],
+      "cpe": [
+        "sqlite:sqlite"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "homeassistant",
+      "name": "Home Assistant",
+      "synonyms": [
+        "home assistant",
+        "homeassistant"
+      ],
+      "banner": "home-assistant",
+      "aliases": [],
+      "cpe": [
+        "home-assistant:home-assistant"
+      ],
+      "builtin": false
+    },
+    {
+      "key": "plex",
+      "name": "Plex Media Server",
+      "synonyms": [
+        "plex",
+        "plex media server"
+      ],
+      "banner": "plex",
+      "aliases": [],
+      "cpe": [
+        "plex:media_server"
+      ],
+      "builtin": false
+    }
+  ]
+}
