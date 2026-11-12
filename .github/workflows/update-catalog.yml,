@@ -1,0 +1,41 @@
+# Put this file in the repository that serves your catalog (for example the GitHub Pages repository `netkestra-privacy`) as
+#   .github/workflows/update-catalog.yml
+# together with catalog/products.json and catalog/build_catalog.py. It rebuilds catalog.json every day and commits it.
+name: Update known-issue catalog
+
+on:
+  schedule:
+    - cron: "17 3 * * *"      # every day at 03:17 UTC
+  workflow_dispatch:           # and a "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build catalog.json
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}   # optional, but makes the run about ten times faster
+        run: python3 catalog/build_catalog.py --out catalog.json
+      - name: Sanity check
+        run: |
+          python3 - <<'PY'
+          import json
+          d = json.load(open("catalog.json"))
+          assert d["schema"] == 1
+          assert len(d["issues"]) > 500, "too few issues, not publishing"
+          print(len(d["products"]), "products,", len(d["issues"]), "issues")
+          PY
+      - name: Commit if changed
+        run: |
+          git config user.name "catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add catalog.json
+          git diff --staged --quiet || (git commit -m "Update catalog $(date -u +%F)" && git push)
